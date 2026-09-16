@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO)
 # olasiz (o'zingizning Telegram ID raqamingiz).
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-_admin_raw = os.getenv("ADMIN_IDS""7888423678"")
+_admin_raw = os.getenv("ADMIN_IDS"7888423678")
 ADMIN_IDS = {int(x.strip()) for x in _admin_raw.split(",") if x.strip().isdigit()}
 DB_PATH = os.getenv("DB_PATH", "movies.db")
 
@@ -34,7 +34,7 @@ if not BOT_TOKEN:
         "BOT_TOKEN environment variable o'rnatilmagan. "
         "@BotFather'dan token oling va uni environment variable sifatida kiriting."
     )
-if not ADMIN_IDS:
+if not ADMIN_IDS: uchun 
     print("OGOHLANTIRISH: ADMIN_IDS bo'sh — hech kim kino qo'sha olmaydi.")
 
 
