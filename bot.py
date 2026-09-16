@@ -223,8 +223,7 @@ async def cmd_start(message: Message, bot: Bot):
             "Yoki kino nomini yozing - mos kinolar ro'yxati chiqadi."
         )
     except Exception as e:
-        pass
-        )
+        pass)
 @user_router.message(F.text.regexp(r"^\d+$"))
 async def get_by_code(message: Message):
     code = int(message.text.strip())
