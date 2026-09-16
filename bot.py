@@ -224,10 +224,7 @@ async def cmd_start(message: Message, bot: Bot):
         )
     except Exception as e:
         pass
-        
-    )
-
-
+        )
 @user_router.message(F.text.regexp(r"^\d+$"))
 async def get_by_code(message: Message):
     code = int(message.text.strip())
