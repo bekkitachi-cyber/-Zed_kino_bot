@@ -33,8 +33,8 @@ if not BOT_TOKEN:
     raise RuntimeError(
         "BOT_TOKEN environment variable o'rnatilmagan. "
         "@BotFather'dan token oling va uni environment variable sifatida kiriting."
-    )
- if not ADMIN_IDS:
+    ) 
+if not ADMIN_IDS:
     print("OGOHLANTIRISH: ADMIN_IDS bo'sh — hech kim kino qo'sha olmaydi.")
 
 
