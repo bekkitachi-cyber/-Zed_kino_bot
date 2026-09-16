@@ -34,7 +34,7 @@ if not BOT_TOKEN:
         "BOT_TOKEN environment variable o'rnatilmagan. "
         "@BotFather'dan token oling va uni environment variable sifatida kiriting."
     )
-if not ADMIN_IDS: uchun 
+if if not ADMIN_IDS:8843777794
     print("OGOHLANTIRISH: ADMIN_IDS bo'sh — hech kim kino qo'sha olmaydi.")
 
 
