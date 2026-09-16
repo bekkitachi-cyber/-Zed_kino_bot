@@ -210,7 +210,6 @@ user_router = Router()
 
 @user_router.message(CommandStart())
 async def cmd_start(message: Message, bot: Bot):
-    CHANNEL_ID = -1004346395098 
     try:
         member = await bot.get_chat_member(chat_id=CHANNEL_ID, user_id=message.from_user.id)
         if member.status in ['left', 'kicked']:
@@ -221,10 +220,17 @@ async def cmd_start(message: Message, bot: Bot):
             "Salom! Bu kino botiga xush kelibsiz.\n\n"
             "Kino kodini yuboring - shu kodga mos kino keladi.\n"
             "Yoki kino nomini yozing - mos kinolar ro'yxati chiqadi."
-        )except Exception as e:
-         pass)
-                
-                @user_router.message(F.text.regexp(r"^\d+$")
+        )
+    except Exception as e:
+        logging.exception("cmd_start xatosi: %s", e)
+        await message.answer(
+            "Salom! Bu kino botiga xush kelibsiz.\n\n"
+            "Kino kodini yuboring - shu kodga mos kino keladi.\n"
+            "Yoki kino nomini yozing - mos kinolar ro'yxati chiqadi."
+        )
+
+
+@user_router.message(F.text.regexp(r"^\d+$"))
 async def get_by_code(message: Message):
     code = int(message.text.strip())
     movie = await get_movie_by_code(code)
@@ -290,4 +296,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-      
+    
+
+# ============================== ISHGA TUSHIRISH ==============================
+
