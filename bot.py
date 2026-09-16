@@ -24,7 +24,7 @@ logging.basicConfig(level=logging.INFO)
 # kiritasiz. BOT_TOKEN'ni @BotFather'dan, ADMIN_IDS'ni @userinfobot'dan
 # olasiz (o'zingizning Telegram ID raqamingiz).
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = "8843777794:AAGaWgrgUC3Cmc8y5eB4EfdrlYrzz9Pn9k"
 _admin_raw = os.getenv("ADMIN_IDS","7888423678")
 ADMIN_IDS = {int(x.strip()) for x in _admin_raw.split(",") if x.strip().isdigit()}
 DB_PATH = os.getenv("DB_PATH", "movies.db")
