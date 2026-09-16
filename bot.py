@@ -35,7 +35,7 @@ if not BOT_TOKEN:
         "@BotFather'dan token oling va uni environment variable sifatida kiriting."
     )
  if not ADMIN_IDS:
-    print(".")
+    print("OGOHLANTIRISH: ADMIN_IDS bo'sh — hech kim kino qo'sha olmaydi.")
 
 
 def is_admin(user_id: int) -> bool:
