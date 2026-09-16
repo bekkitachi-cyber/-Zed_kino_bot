@@ -34,8 +34,8 @@ if not BOT_TOKEN:
         "BOT_TOKEN environment variable o'rnatilmagan. "
         "@BotFather'dan token oling va uni environment variable sifatida kiriting."
     )
-if if not ADMIN_IDS:8843777794
-    print("OGOHLANTIRISH: ADMIN_IDS bo'sh — hech kim kino qo'sha olmaydi.")
+if if not ADMIN_IDS:7888423678
+    print(".")
 
 
 def is_admin(user_id: int) -> bool:
